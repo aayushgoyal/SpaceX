@@ -1,5 +1,5 @@
 <div class="program-card">
-    <div v-if="programDetails.links.mission_patch_small" class="logo-wrapper">
+    <div *ngIf="programDetails.links.mission_patch_small" class="logo-wrapper">
         <img class="logo" [src]="programDetails.links.mission_patch_small" [alt]="programDetails.mission_name" />
     </div>
 

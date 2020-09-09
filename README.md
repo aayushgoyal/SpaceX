@@ -25,4 +25,7 @@ This project is built using [Angular](https://angular.io) version 10.1.0.
 
 ## Performance Score
 
+![Overall Score](https://github.com/aayushgoyal/SpaceX/blob/master/src/assets/overall.PNG?raw=true)
+
+![Performance Score](https://github.com/aayushgoyal/SpaceX/blob/master/src/assets/performance.PNG?raw=true)
 

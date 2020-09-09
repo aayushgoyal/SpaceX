@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from "@angular/router";
   templateUrl: './filter-card.component.html',
   styleUrls: ['./filter-card.component.scss']
 })
-export class FilterCardComponent implements OnInit {
+export class FilterCardComponent  {
 
   filtersData:any = [
       {
@@ -56,9 +56,6 @@ export class FilterCardComponent implements OnInit {
   ]
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
-
-  ngOnInit(): void {
-  }
 
   getSelectedFilters() {
       let filters = {};

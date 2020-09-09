@@ -1,0 +1,21 @@
+<main>
+    <h1>SpaceX Launch Programs</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="filters col-md-3 col-lg-2 col-sm-12">
+                <app-filter-card></app-filter-card>
+            </div>
+
+            <div class="list col-md-9 col-lg-10 col-sm-12">
+                <div class="row">
+                  <app-program-card class="col-md-4 col-lg-3 col-sm-12" *ngFor="let program of launchPrograms" [programDetails]="program"></app-program-card>
+                </div>
+            </div>
+        </div>
+
+        <div class="creator">
+            <p>Developed by: <span>Aayush Goyal</span></p>
+        </div>
+    </div>
+</main>

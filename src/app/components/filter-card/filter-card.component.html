@@ -1,0 +1,18 @@
+<div class="filter-wrapper">
+    <p class="heading">Filters</p>
+
+    <div class="filters" *ngFor="let filterData of filtersData">
+        <p class="filter-heading">{{filterData.filterName}}</p>
+
+        <div class="filter-btns">
+            <div class="row filter-row" >
+                <button *ngFor="let filter of filterData.filters" 
+                        class="col-md-4" 
+                        (click)="filterSelect(filterData.filterId, filter.UrlName )"
+                        [class.selected]="filter.UrlName === filterData.selectedFilter">
+                    {{filter.name}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

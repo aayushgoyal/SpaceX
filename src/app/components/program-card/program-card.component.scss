@@ -1,0 +1,38 @@
+.program-card {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+
+    .logo-wrapper {
+        background-color: #f2f2f2;
+        text-align: center;
+        
+        .logo {
+            max-width: 200px;
+            width: 100%;
+        } 
+    }
+
+
+    .details {
+        a {
+            color: #454c95;
+            text-decoration: none;
+            font-weight:  700;
+        }
+
+        .category-title {
+            font-weight: 700;
+            margin: 5px 0;
+
+            span {
+                font-weight: 400;
+                color: #454c95;
+            }
+        }
+
+        .mission-list {
+            margin-left: 40px;
+        }
+    }
+}

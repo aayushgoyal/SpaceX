@@ -1,0 +1,22 @@
+<div class="program-card">
+    <div v-if="programDetails.links.mission_patch_small" class="logo-wrapper">
+        <img class="logo" [src]="programDetails.links.mission_patch_small" [alt]="programDetails.mission_name" />
+    </div>
+
+    <div class="details">
+        <a [href]="programDetails.links.article_link" [title]="programDetails.mission_name">{{programDetails.mission_name}} # {{programDetails.flight_number}}</a>
+        
+        <div *ngIf="programDetails.mission_id && programDetails.mission_id.length">
+            <p class="category-title">Mission Ids:</p>
+            <ul class="mission-list">
+                <li *ngFor="let id of programDetails.mission_id">{{id}}</li>
+            </ul>
+        </div>
+
+        <p class="category-title">Launch Date: <span>{{programDetails.launch_year}}</span></p> 
+
+        <p class="category-title">Successful Launch: <span>{{programDetails.launch_success}}</span></p> 
+
+        <p class="category-title">Successful Landing: <span>{{programDetails?.launch_landing}}</span></p> 
+    </div>
+</div>
